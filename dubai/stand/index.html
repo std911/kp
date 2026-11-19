@@ -124,6 +124,15 @@ const TILES=[
  {id:'jbr',q:0,r:-3,h:.76,top:'water',lbl:'JBR',code:'JBR',yr:'2007',name:'JBR · The Beach',ru:'Пляж Джумейра-Бич-Резиденс',txt:'Линия жилых башен прямо у пляжа, по соседству с Мариной.',tech:['Пляж и вода','Свет окон'],lh:.9},
  {id:'atlroyal',q:3,r:-4,h:.62,top:'water',lbl:'Atlantis The Royal',code:'AR',yr:'2023',name:'Atlantis The Royal',ru:'Атлантис Роял',txt:'Отель из сдвинутых друг относительно друга блоков, будто сложенных из кубиков.',tech:['Сложная геометрия','Подсветка фасада'],lh:.6},
  {id:'gv',q:-4,r:2,h:.58,top:'land',lbl:'Global Village',code:'GV',yr:'1996',name:'Global Village',ru:'Глобал Вилладж',txt:'Парк павильонов десятков стран: рынки, еда и шоу под открытым небом.',tech:['Цветная подсветка','Колесо обозрения'],lh:.45},
+ {id:'citywalk',q:-1,r:-1,h:.66,top:'land',lbl:'City Walk',code:'CW',yr:'2013',name:'City Walk',ru:'Сити-Уок',txt:'Пешеходные улицы с бутиками и кафе — Дубай в масштабе человека.',tech:['Мелкая застройка','Уличный свет'],lh:.6},
+ {id:'zabeel',q:-2,r:0,h:.6,top:'land',lbl:'Zabeel Park',code:'ZP',yr:'2005',name:'Zabeel Park',ru:'Парк Забиль',txt:'Большой городской парк с озером. В нём стоит Dubai Frame.',tech:['Озеро','Лаборатория деревьев'],lh:.35},
+ {id:'meydan',q:1,r:-2,h:.64,top:'land',lbl:'Meydan',code:'MY',yr:'2010',name:'Meydan Racecourse',ru:'Ипподром Мейдан',txt:'Ипподром, где проходит Кубок мира Дубая — одни из самых богатых скачек на планете.',tech:['Трибуна с подсветкой','Беговая дорожка'],lh:.4},
+ {id:'harbour',q:-1,r:-3,h:.7,top:'water',lbl:'Dubai Harbour',code:'HB',yr:'2020',name:'Dubai Harbour',ru:'Дубай Харбор',txt:'Гавань для яхт и круизных лайнеров рядом с JBR.',tech:['Яхты у причалов','Вода с бликом'],lh:.7},
+ {id:'lamer',q:-1,r:-2,h:.6,top:'water',lbl:'La Mer',code:'LM',yr:'2017',name:'La Mer',ru:'Ла Мер',txt:'Пляжный квартал на Джумейре: кафе, песок и низкая застройка у воды.',tech:['Пляж','Тёплый свет кафе'],lh:.35},
+ {id:'souk',q:-3,r:3,h:.62,top:'land',lbl:'Gold Souk',code:'GS',yr:'1940-е',name:'Deira Gold Souk',ru:'Золотой рынок Дейры',txt:'Крытые улочки ювелирных лавок в старом Дубае.',tech:['Плотная застройка','Тенты и фактуры'],lh:.35},
+ {id:'garden',q:-1,r:2,h:.6,top:'land',lbl:'Miracle Garden',code:'MG',yr:'2013',name:'Dubai Miracle Garden',ru:'Сад чудес',txt:'Сад из миллионов цветов, высаженных в арки и фигуры.',tech:['Цветные клумбы','Арки из цветов'],lh:.35},
+ {id:'flamingo',q:1,r:1,h:.58,top:'land',lbl:'Ras Al Khor',code:'RK',yr:'1985',name:'Ras Al Khor',ru:'Заповедник Рас-эль-Хор',txt:'Водно-болотный заповедник в черте города, куда зимой прилетают фламинго.',tech:['Лагуна','Фламинго'],lh:.3},
+ {id:'hills',q:3,r:-1,h:.68,top:'land',lbl:'Dubai Hills',code:'DH',yr:'2013',name:'Dubai Hills',ru:'Дубай-Хиллс',txt:'Жилой район с виллами, башнями и гольф-полем посередине.',tech:['Виллы','Гольф-поле','Башни'],lh:.8},
 ];
 
 const EN={
@@ -146,6 +155,15 @@ const EN={
  jbr:{yr:'2007',ru:'Jumeirah Beach Residence',txt:'A line of residential towers right on the beach, next door to the Marina.',tech:['Beach and water','Lit windows']},
  atlroyal:{yr:'2023',ru:'Atlantis The Royal',txt:'A hotel of offset blocks, stacked as if built from cubes.',tech:['Complex geometry','Façade lighting']},
  gv:{yr:'1996',ru:'Global Village',txt:'A park of pavilions from dozens of countries: markets, food and open-air shows.',tech:['Coloured lighting','Ferris wheel']},
+ citywalk:{yr:'2013',ru:'City Walk',txt:'Pedestrian streets with boutiques and cafés: Dubai at human scale.',tech:['Low-rise detail','Street lighting']},
+ zabeel:{yr:'2005',ru:'Zabeel Park',txt:'A large city park with a lake. Dubai Frame stands inside it.',tech:['Lake','Model trees']},
+ meydan:{yr:'2010',ru:'Meydan Racecourse',txt:'Home of the Dubai World Cup, one of the richest horse races on the planet.',tech:['Lit grandstand','Racetrack']},
+ harbour:{yr:'2020',ru:'Dubai Harbour',txt:'A harbour for yachts and cruise liners next to JBR.',tech:['Yachts at the piers','Water with reflections']},
+ lamer:{yr:'2017',ru:'La Mer',txt:'A beachfront quarter in Jumeirah: cafés, sand and low-rise buildings by the water.',tech:['Beach','Warm café light']},
+ souk:{yr:'1940s',ru:'Deira Gold Souk',txt:'Covered lanes of jewellery shops in old Dubai.',tech:['Dense old town','Awnings and textures']},
+ garden:{yr:'2013',ru:'Dubai Miracle Garden',txt:'A garden of millions of flowers planted into arches and shapes.',tech:['Flower beds','Flower arches']},
+ flamingo:{yr:'1985',ru:'Ras Al Khor',txt:'A wetland sanctuary inside the city where flamingos arrive in winter.',tech:['Lagoon','Flamingos']},
+ hills:{yr:'2013',ru:'Dubai Hills',txt:'A residential district of villas and towers around a golf course.',tech:['Villas','Golf course','Towers']},
 };
 const UI={ru:{night:'☾ Ночь',day:'☀ День',tour:'▶ Тур',stop:'■ Стоп',room:'Шоурум',home:'Обзор',studio:'Что показывает студия',screen:'Сенсорный экран',put:'Встроить макет',take:'Вынуть макет',hintM:'Тяни — вращать · колесо — приблизить · клик по соте — история объекта',hintT:'Один палец — вращать · два — приблизить · тап по соте — история'},
  en:{night:'☾ Night',day:'☀ Day',tour:'▶ Tour',stop:'■ Stop',room:'Showroom',home:'Overview',studio:'What the studio shows',screen:'Touchscreen',put:'Drop the model in',take:'Take it out',hintM:'Drag to rotate · scroll to zoom · click a hex for its story',hintT:'One finger to rotate · two to zoom · tap a hex for its story'}};
@@ -162,14 +180,14 @@ renderer.shadowMap.enabled=true; renderer.shadowMap.type=THREE.PCFSoftShadowMap;
 const scene=new THREE.Scene();
 const BG_N=new THREE.Color(0x06070a), BG_D=new THREE.Color(0x24262c);
 scene.background=BG_N.clone();
-scene.fog=new THREE.Fog(0x06070a,45,120);
+scene.fog=new THREE.Fog(0x06070a,60,160);
 const camera=new THREE.PerspectiveCamera(36,innerWidth/innerHeight,.4,160);
 const HOME={pos:new THREE.Vector3(8.2,8.6,11),tgt:new THREE.Vector3(-.9,.6,-1.3)};
 if(innerWidth<760){HOME.pos.set(9.5,12.5,15);HOME.tgt.set(-1,.4,-1.6);}
 camera.position.copy(HOME.pos);
 const controls=new THREE.OrbitControls(camera,canvas);
 controls.target.copy(HOME.tgt); controls.enableDamping=true; controls.dampingFactor=.07;
-controls.maxPolarAngle=1.42; controls.minDistance=2.5; controls.maxDistance=70; controls.screenSpacePanning=true;
+controls.maxPolarAngle=1.42; controls.minDistance=2.5; controls.maxDistance=110; controls.screenSpacePanning=true;
 
 // env map
 const pmrem=new THREE.PMREMGenerator(renderer);
@@ -187,14 +205,14 @@ const ENV_D=pmrem.fromScene(envScene,.03).texture;scene.environment=ENV_N;
 // lights
 const hemi=new THREE.HemisphereLight(0x9fb4d8,0x1a140c,.3); scene.add(hemi);
 const key=new THREE.DirectionalLight(0x9fb0d8,.5);
-key.position.set(-16,30,12); key.castShadow=true;
-key.shadow.mapSize.set(4096,4096); Object.assign(key.shadow.camera,{left:-24,right:24,top:24,bottom:-24,near:1,far:80}); key.shadow.bias=-.0008; key.shadow.normalBias=.02;
+key.position.set(-20,40,16); key.castShadow=true;
+key.shadow.mapSize.set(4096,4096); Object.assign(key.shadow.camera,{left:-34,right:34,top:34,bottom:-34,near:1,far:110}); key.shadow.bias=-.0008; key.shadow.normalBias=.02;
 key.target.position.set(-1,0,-1); scene.add(key,key.target);
 const fill=new THREE.DirectionalLight(0xe8eeff,0);fill.position.set(12,9,10);fill.target.position.set(-1,0,-1);scene.add(fill,fill.target);
 const rimL=new THREE.DirectionalLight(0xfff4e6,0);rimL.position.set(4,10,-16);rimL.target.position.set(-1,0,-1);scene.add(rimL,rimL.target);
 const top_=new THREE.DirectionalLight(0xffffff,0);top_.position.set(-1,20,-1);top_.target.position.set(-1,0,-1);scene.add(top_,top_.target);
 const warm=new THREE.PointLight(0xffb36b,.6,18,2); warm.position.set(3,5,4); scene.add(warm);
-const spot=new THREE.SpotLight(0xfff1d8,0,26,.3,.6,1.2); spot.position.set(0,9,0); scene.add(spot,spot.target);
+const spot=new THREE.SpotLight(0xfff1d8,0,34,.3,.6,1.2); spot.position.set(0,9,0); scene.add(spot,spot.target);
 
 // ───────── TEXTURES ─────────
 function cvs(w,h,fn){const c=document.createElement('canvas');c.width=w;c.height=h;fn(c.getContext('2d'),w,h);const t=new THREE.CanvasTexture(c);t.anisotropy=8;return t;}
@@ -394,7 +412,7 @@ B.desert=g=>{
   for(let i=0;i<5;i++){const a=i/5*2*PI;camp.add(sh(new THREE.Mesh(new THREE.ConeGeometry(.05,.07,4),M.white))).position.set(Math.cos(a)*.15,.035,Math.sin(a)*.15);}
   const fire=new THREE.Mesh(new THREE.SphereGeometry(.025,8,6),M.warmLed);fire.position.y=.02;camp.add(fire);
   const fl=new THREE.PointLight(0xff9a40,.8,1.2,2);fl.position.y=.12;camp.add(fl);
-  anim.push(t=>{fl.intensity=.6+.3*Math.sin(t*9)*Math.sin(t*5.3);});
+  anim.push(t=>{fl.intensity=(.6+.3*Math.sin(t*9)*Math.sin(t*5.3))*(1-K*.85);});
 };
 
 
@@ -454,9 +472,36 @@ B.gv=g=>{
   anim.push((t,dt)=>{wh.rotation.z-=dt*.25;});
 };
 
+
+B.citywalk=g=>{for(let i=0;i<14;i++){const x=(rnd()-.5)*1.1,z=(rnd()-.5)*1.1;if(!inHex(x,z,R*.55))continue;g.add(box(.14+rnd()*.08,.08+rnd()*.12,.12+rnd()*.06,i%3?Mcream:Mwin,x,0,z,(rnd()<.5?0:PI/2)));}
+  g.add(box(.16,.75,.16,M.glassB,.45,0,-.4));g.add(box(.16,.6,.16,M.glass,-.5,0,-.3));};
+B.zabeel=g=>{const lk=sh(new THREE.Mesh(new THREE.CylinderGeometry(.34,.34,.02,32),M.water));lk.scale.set(1.2,1,.7);lk.position.set(.05,.012,.05);g.add(lk);
+  g.add(cyl(.5,.5,.012,M.green,-.25,0,-.3,24));};
+B.meydan=g=>{const tr=sh(new THREE.Mesh(new THREE.TorusGeometry(.55,.05,6,48),M.sandB));tr.rotation.x=-PI/2;tr.scale.set(1.25,.8,1);tr.position.y=.02;g.add(tr);
+  const inner=sh(new THREE.Mesh(new THREE.CylinderGeometry(.5,.5,.015,40),M.green));inner.scale.set(1.25,1,.8);g.add(inner);
+  const st=sh(new THREE.Mesh(new THREE.CylinderGeometry(.9,.9,.16,40,1,true,-.5,1),M.white));st.material=Mwin;st.position.set(0,.08,.25);g.add(st);
+  const roof=new THREE.Mesh(new THREE.CylinderGeometry(.95,.95,.015,40,1,false,-.5,1),M.white);roof.position.set(0,.17,.25);g.add(roof);};
+B.harbour=g=>{g.add(hexBand(.35,M.sand));
+  for(let p=0;p<3;p++){const z=-.5+p*.28;g.add(box(.9,.02,.04,M.white,-.05,0,z));for(let y=0;y<4;y++){const yt=box(.12,.035,.04,M.white,-.42+y*.25,.012,z+.06);g.add(yt);}}
+  g.add(box(.2,.9,.2,M.glassB,.35,.035,.62));g.add(box(.18,.7,.18,M.glass,-.1,.035,.62));};
+B.lamer=g=>{g.add(hexBand(-.15,M.sand));for(let i=0;i<9;i++){const x=-.7+i*.18,z=.15+rnd()*.35;if(!inHex(x,z,R*.82))continue;g.add(box(.12,.06+rnd()*.05,.1,i%2?Mcream:Mwin,x,.035,z));}
+  for(let i=0;i<10;i++){const t=sh(new THREE.Mesh(treeGeo,M.tree));const s_=.04;t.scale.set(s_,s_*1.4,s_);t.position.set(-.8+i*.18,.09,-.05);g.add(t);}};
+B.souk=g=>{const aw=[0xc0392b,0xd68910,0x1f618d,0x7d3c98];for(let i=0;i<40;i++){const x=(rnd()-.5)*1.5,z=(rnd()-.5)*1.5;if(!inHex(x,z,R*.66))continue;const h=.06+rnd()*.08;g.add(box(.11,h,.1,M.sandB,x,0,z));
+  if(rnd()<.4){const a=new THREE.Mesh(new THREE.BoxGeometry(.12,.006,.04),new THREE.MeshStandardMaterial({color:aw[i%4],roughness:.7}));a.position.set(x,h+.004,z+.06);g.add(a);}}};
+B.garden=g=>{const fc=[0xff5e7e,0xffd23f,0xff8c42,0xc44dff,0xff4f4f,0xffffff,0x6ee36e];
+  for(let i=0;i<60;i++){const x=(rnd()-.5)*1.6,z=(rnd()-.5)*1.6;if(!inHex(x,z,R*.7))continue;const m=new THREE.MeshStandardMaterial({color:fc[i%fc.length],roughness:.8,emissive:fc[i%fc.length],emissiveIntensity:.12});
+    g.add(box(.09+rnd()*.06,.03,.09+rnd()*.06,m,x,0,z,rnd()*PI));}
+  [[-.2,0],[.25,-.2]].forEach(([x,z])=>{const a=new THREE.Mesh(new THREE.TorusGeometry(.14,.025,6,24,PI),new THREE.MeshStandardMaterial({color:0xff5e9e,roughness:.8}));a.position.set(x,0,z);a.castShadow=true;g.add(a);});};
+B.flamingo=g=>{const lg=sh(new THREE.Mesh(new THREE.CylinderGeometry(.5,.5,.02,40),M.water));lg.scale.set(1.3,1,.85);lg.position.y=.012;g.add(lg);
+  const pm=new THREE.MeshStandardMaterial({color:0xff8fa8,roughness:.6});
+  for(let i=0;i<26;i++){const x=(rnd()-.5)*.9,z=(rnd()-.5)*.6;const f=new THREE.Mesh(new THREE.SphereGeometry(.018,6,5),pm);f.scale.y=1.4;f.position.set(x,.05,z);g.add(f);
+    const l=new THREE.Mesh(new THREE.CylinderGeometry(.003,.003,.04,4),pm);l.position.set(x,.025,z);g.add(l);}};
+B.hills=g=>{g.add(cyl(.42,.42,.012,M.green,.05,0,.05,32));
+  for(let i=0;i<22;i++){const a=rnd()*2*PI,r=.5+rnd()*.25;const x=Math.cos(a)*r,z=Math.sin(a)*r;if(!inHex(x,z,R*.82)||Math.hypot(x-.4,z+.45)<.3)continue;g.add(box(.08,.05,.07,Mcream,x,0,z,a));}
+  g.add(box(.17,.95,.17,M.glassB,.4,0,-.45));g.add(box(.15,.75,.15,M.glass,.62,0,-.25));};
 // ───────── TILES ─────────
 const tiles={}, pickables=[];
-const SC=1.6;const stand=new THREE.Group();stand.scale.setScalar(SC);scene.add(stand);
+const SC=2;const stand=new THREE.Group();stand.scale.setScalar(SC);scene.add(stand);
 const rimGeo=new THREE.TorusGeometry(R*.995,.022,4,6); rimGeo.rotateX(-PI/2); rimGeo.rotateY(PI/6);
 const dotGeo=new THREE.SphereGeometry(.028,8,6), treeGeo=new THREE.SphereGeometry(1,7,5);
 TILES.forEach(T=>{
@@ -533,18 +578,18 @@ let scrT=0;anim.push((t,dt)=>{scrT+=dt;if(scrT>1.8){scrT=0;screens.forEach(o=>{o
 
 // ───────── ROOM ─────────
 const room=new THREE.Group();scene.add(room);
-const mirror=new THREE.Reflector(new THREE.PlaneGeometry(170,170),{textureWidth:innerWidth*DPR*.8,textureHeight:innerHeight*DPR*.8,color:0x595959,clipBias:.01});
+const mirror=new THREE.Reflector(new THREE.PlaneGeometry(210,210),{textureWidth:innerWidth*DPR*.8,textureHeight:innerHeight*DPR*.8,color:0x595959,clipBias:.01});
 mirror.rotation.x=-PI/2;mirror.position.y=-.03;scene.add(mirror);
 const concrete=cvs(1024,1024,(g,w,h)=>{g.fillStyle='#8a8784';g.fillRect(0,0,w,h);
   for(let o=0;o<4;o++){const n=[220,700,2400,9000][o],r=[160,70,22,5][o],a=[.05,.05,.045,.05][o];
     for(let i=0;i<n;i++){const x=rnd()*w,y=rnd()*h,rr=r*(.4+rnd());const gr=g.createRadialGradient(x,y,0,x,y,rr);const c=rnd()<.5?'0,0,0':'255,255,255';gr.addColorStop(0,`rgba(${c},${a})`);gr.addColorStop(1,`rgba(${c},0)`);g.fillStyle=gr;g.fillRect(x-rr,y-rr,rr*2,rr*2);}}
   for(let i=0;i<500;i++){g.fillStyle=`rgba(${rnd()<.5?40:200},${rnd()<.5?40:200},${rnd()<.5?40:200},.18)`;const s=1+rnd()*2.5;g.fillRect(rnd()*w,rnd()*h,s,s);}
   g.strokeStyle='rgba(0,0,0,.22)';g.lineWidth=3;g.strokeRect(1.5,1.5,w-3,h-3);});
-concrete.wrapS=concrete.wrapT=THREE.RepeatWrapping;concrete.repeat.set(28,28);
-const floor=new THREE.Mesh(new THREE.PlaneGeometry(170,170),new THREE.MeshStandardMaterial({map:concrete,roughnessMap:concrete,color:0x3a3936,roughness:.55,metalness:0,transparent:true,opacity:.9,envMapIntensity:.6}));
+concrete.wrapS=concrete.wrapT=THREE.RepeatWrapping;concrete.repeat.set(34,34);
+const floor=new THREE.Mesh(new THREE.PlaneGeometry(210,210),new THREE.MeshStandardMaterial({map:concrete,roughnessMap:concrete,color:0x3a3936,roughness:.55,metalness:0,transparent:true,opacity:.9,envMapIntensity:.6}));
 floor.rotation.x=-PI/2;floor.receiveShadow=true;scene.add(floor);
 const glow={material:{opacity:0}};
-const walls=new THREE.Mesh(new THREE.BoxGeometry(100,20,100),new THREE.MeshStandardMaterial({color:0x08090b,roughness:.9,side:THREE.BackSide}));walls.position.y=10;room.add(walls);
+const walls=new THREE.Mesh(new THREE.BoxGeometry(124,24,124),new THREE.MeshStandardMaterial({color:0x08090b,roughness:.9,side:THREE.BackSide}));walls.position.y=12;room.add(walls);
 const strips=[];for(let i=-3;i<=3;i++){const s=new THREE.Mesh(new THREE.BoxGeometry(46,.06,.22),new THREE.MeshBasicMaterial({color:0xffffff}));s.position.set(0,14.9,i*7);room.add(s);strips.push(s);}
 // крупный логотип студии на стенах
 new THREE.ImageLoader().load('logo911.png',img=>{
@@ -555,21 +600,21 @@ new THREE.ImageLoader().load('logo911.png',img=>{
   const asp=img.width/img.height;
   const mk=(w,x,y,z,ry)=>{const m=new THREE.Mesh(new THREE.PlaneGeometry(w,w/asp),new THREE.MeshBasicMaterial({map:tx,transparent:true,fog:false,color:new THREE.Color(1,1,1).multiplyScalar(1.25)}));m.position.set(x,y,z);m.rotation.y=ry;room.add(m);
     const bk=new THREE.Mesh(new THREE.PlaneGeometry(w*1.12,w/asp*2.2),new THREE.MeshStandardMaterial({color:0x0c0c0e,roughness:.4,metalness:.6}));bk.position.set(x,y,z);bk.rotation.y=ry;bk.translateZ(-.05);room.add(bk);};
-  mk(44,-6,10.5,-49.8,0);mk(44,-49.8,10.5,-4,PI/2);
+  mk(54,-6,13,-61.8,0);mk(54,-61.8,13,-4,PI/2);
 });
 // стены как на рендерах: чёрные панели и вертикальные световые полосы
 const ledV=new THREE.MeshBasicMaterial({color:new THREE.Color(1,.97,.92).multiplyScalar(1.5),fog:false});
-for(let k=-8;k<=8;k++){const u=k*6;
-  [[u,-49.9,0],[-49.9,u,1],[u,49.9,0],[49.9,u,1]].forEach(([x,z,side])=>{const m=new THREE.Mesh(new THREE.BoxGeometry(side?.05:.1,12,side?.1:.05),ledV);m.position.set(x,7,z);room.add(m);});}
+for(let k=-10;k<=10;k++){const u=k*6;
+  [[u,-61.9,0],[-61.9,u,1],[u,61.9,0],[61.9,u,1]].forEach(([x,z,side])=>{const m=new THREE.Mesh(new THREE.BoxGeometry(side?.06:.12,15,side?.12:.06),ledV);m.position.set(x,9,z);room.add(m);});}
 // потолок: фермы со споты вместо светящихся линий
 const trussM=new THREE.MeshStandardMaterial({color:0x1a1b1f,roughness:.6,metalness:.5});
-for(let k=-4;k<=4;k++){const t=new THREE.Mesh(new THREE.BoxGeometry(80,.35,.35),trussM);t.position.set(-1,16,k*8-1);room.add(t);
-  for(let q=-6;q<=6;q++){const sp=new THREE.Mesh(new THREE.CylinderGeometry(.12,.16,.4,10),trussM);sp.position.set(q*6-1,15.65,k*8-1);room.add(sp);
-    const g=new THREE.Mesh(new THREE.CircleGeometry(.11,12),ledV);g.rotation.x=PI/2;g.position.set(q*6-1,15.44,k*8-1);room.add(g);}}
+for(let k=-5;k<=5;k++){const t=new THREE.Mesh(new THREE.BoxGeometry(100,.4,.4),trussM);t.position.set(-1,20,k*9-1);room.add(t);
+  for(let q=-6;q<=6;q++){const sp=new THREE.Mesh(new THREE.CylinderGeometry(.12,.16,.4,10),trussM);sp.position.set(q*7-1,19.6,k*9-1);room.add(sp);
+    const g=new THREE.Mesh(new THREE.CircleGeometry(.11,12),ledV);g.rotation.x=PI/2;g.position.set(q*7-1,19.39,k*9-1);room.add(g);}}
 // ───────── PANORAMA (generated 360) ─────────
 let pano=null, panoOn=false;
 new THREE.TextureLoader().load('env/showroom-360.jpg',tx=>{tx.mapping=THREE.EquirectangularReflectionMapping;pano=tx;const b=$('#bPano');b.style.display='';},undefined,()=>{});
-function setPano(on){panoOn=on&&!!pano;room.visible=!panoOn;scene.background=panoOn?pano:scene.background.isColor?scene.background:BG_N.clone();if(!panoOn&&!scene.background.isColor)scene.background=BG_N.clone();scene.fog.far=panoOn?400:120;$('#bPano').classList.toggle('on',panoOn);$('#bRoom').classList.toggle('on',!panoOn);}
+function setPano(on){panoOn=on&&!!pano;room.visible=!panoOn;scene.background=panoOn?pano:scene.background.isColor?scene.background:BG_N.clone();if(!panoOn&&!scene.background.isColor)scene.background=BG_N.clone();scene.fog.far=panoOn?400:160;$('#bPano').classList.toggle('on',panoOn);$('#bRoom').classList.toggle('on',!panoOn);}
 $('#bPano').onclick=()=>setPano(true);$('#bRoom').onclick=()=>setPano(false);
 
 // ───────── POST ─────────
@@ -582,24 +627,24 @@ addEventListener('resize',resize);resize();
 // ───────── DAY / NIGHT ─────────
 let K=0,Kt=0;
 function applyK(k){
-  hemi.intensity=lerp(.28,.55,k);hemi.color.setRGB(lerp(.62,1,k),lerp(.7,1,k),lerp(.85,1,k));hemi.groundColor.setRGB(lerp(.1,.35,k),lerp(.08,.33,k),lerp(.05,.3,k));
-  key.intensity=lerp(.5,1.1,k);key.color.setRGB(lerp(.62,1,k),lerp(.69,.97,k),lerp(.85,.92,k));
-  fill.intensity=lerp(0,.55,k);rimL.intensity=lerp(0,.9,k);top_.intensity=lerp(0,.35,k);
+  hemi.intensity=lerp(.28,.48,k);hemi.color.setRGB(lerp(.62,1,k),lerp(.7,1,k),lerp(.85,1,k));hemi.groundColor.setRGB(lerp(.1,.35,k),lerp(.08,.33,k),lerp(.05,.3,k));
+  key.intensity=lerp(.5,.7,k);key.color.setRGB(lerp(.62,1,k),lerp(.69,.97,k),lerp(.85,.92,k));
+  fill.intensity=lerp(0,.28,k);rimL.intensity=lerp(0,.22,k);top_.intensity=lerp(0,.12,k);
   warm.intensity=lerp(.7,.15,k);
   // стекло днём: меньше зеркала, больше собственного цвета
-  [M.glass,M.glassB].forEach((m,i)=>{m.metalness=lerp(.75,.45,k);m.roughness=lerp(.22,.16,k);m.envMapIntensity=lerp(1,1,k);m.emissiveIntensity=lerp(1,.22,k);});
+  [M.glass,M.glassB].forEach((m,i)=>{m.metalness=lerp(.75,.3,k);m.roughness=lerp(.22,.4,k);m.envMapIntensity=lerp(1,.65,k);m.emissiveIntensity=lerp(1,.22,k);});
   Mwin.emissiveIntensity=lerp(1,.2,k);Mcream.emissiveIntensity=lerp(.25,.02,k);
   M.glass.color.setRGB(lerp(.36,.55,k),lerp(.4,.62,k),lerp(.45,.72,k));
   M.glassB.color.setRGB(lerp(.24,.38,k),lerp(.33,.55,k),lerp(.41,.7,k));
-  scene.environment=k>.5?ENV_D:ENV_N;M.gold.envMapIntensity=lerp(1,1.2,k);M.steel.envMapIntensity=lerp(1,1.15,k);M.steel.metalness=lerp(.95,.85,k);
-  M.steel.emissiveIntensity=lerp(.9,.1,k);M.arab.emissiveIntensity=lerp(.3,.04,k);M.arab.color.setScalar(lerp(.95,.78,k));
+  scene.environment=k>.5?ENV_D:ENV_N;M.gold.envMapIntensity=lerp(1,.85,k);M.gold.roughness=lerp(.26,.38,k);M.steel.envMapIntensity=lerp(1,.8,k);M.steel.roughness=lerp(.2,.32,k);M.steel.metalness=lerp(.95,.85,k);
+  M.steel.emissiveIntensity=lerp(.9,.1,k);M.arab.emissiveIntensity=lerp(.3,.04,k);M.arab.color.setScalar(lerp(.95,.66,k));M.white.color.setScalar(lerp(.85,.7,k));M.sand.color.setRGB(lerp(.72,.6,k),lerp(.64,.52,k),lerp(.48,.38,k));
   M.side.color.setRGB(lerp(.165,.23,k),lerp(.172,.235,k),lerp(.19,.25,k));
-  M.rim.color.setScalar(lerp(1.15,.85,k));
-  bloom.strength=lerp(.95,.22,k);bloom.threshold=lerp(.7,.85,k);
+  M.rim.color.setScalar(lerp(1.15,.5,k));
+  bloom.strength=lerp(.95,.05,k);bloom.threshold=lerp(.7,.97,k);
   if(scene.background.isColor)scene.background.lerpColors(BG_N,BG_D,k);
   scene.fog.color.lerpColors(BG_N,BG_D,k);
-  walls.material.color.setRGB(lerp(.03,.14,k),lerp(.034,.14,k),lerp(.04,.15,k));
-  floor.material.color.setScalar(lerp(.2,.36,k));
+  walls.material.color.setRGB(lerp(.03,.09,k),lerp(.034,.09,k),lerp(.04,.1,k));
+  floor.material.color.setScalar(lerp(.2,.22,k));floor.material.opacity=lerp(.9,.975,k);
   strips.forEach(s=>s.visible=false);
 }
 $('#bDay').onclick=()=>{Kt=Kt?0:1;$('#bDay').textContent=Kt?L('day'):L('night');$('#bDay').classList.toggle('on',!!Kt);};
@@ -622,7 +667,7 @@ function select(id){
   if(innerWidth<760){c.y-=1.5*SC;pos.y-=1.5*SC;}
   if(innerWidth>=760){const right=new THREE.Vector3().crossVectors(dir,new THREE.Vector3(0,1,0)).normalize();c.addScaledVector(right,-1.1*SC);pos.addScaledVector(right,-1.1*SC);}
   flyTo(pos,c);
-  spot.position.copy(t.base).add(new THREE.Vector3(.6,13,.6));spot.target.position.copy(t.base);
+  spot.position.copy(t.base).add(new THREE.Vector3(.8,16,.8));spot.target.position.copy(t.base);
   fillPanel(T);$('#panel').classList.add('open');document.body.classList.add('sel');
   $('#pAct').hidden=id!=='slot';if(id==='slot'){SLOT.kt=0;setTimeout(()=>{if(sel==='slot'){SLOT.kt=1;slotBtn();}},1300);slotBtn();}
 }
@@ -658,7 +703,7 @@ function frame(){
   anim.forEach(f=>f(t,dt));
   M.dot.color.setRGB(.31,.89,.94).multiplyScalar(lerp(1.5,.8,K)*(.75+.25*Math.sin(t*2.4)));
   Object.values(tiles).forEach(o=>{const target=0;o.lift=lerp(o.lift,target,.08);o.g.position.y=o.lift;});
-  spot.intensity=lerp(spot.intensity,sel?lerp(.9,.5,K):0,.08);
+  spot.intensity=lerp(spot.intensity,sel?lerp(.9,.18,K):0,.08);
   if(cam.k<1){cam.k=Math.min(1,cam.k+dt/1.6);const e=cam.k<.5?4*cam.k**3:1-Math.pow(-2*cam.k+2,3)/2;camera.position.lerpVectors(cam.from,cam.to,e);controls.target.lerpVectors(cam.tf,cam.tt,e);}
   else if(!sel&&!down&&!tourTimer&&!window.__still){controls.autoRotate=true;controls.autoRotateSpeed=.25;}
   if(sel||down||tourTimer)controls.autoRotate=false;
