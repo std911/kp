@@ -116,6 +116,14 @@ const TILES=[
  {id:'arab',q:3,r:-3,h:.74,top:'water',lbl:'Burj Al Arab',code:'BA',yr:'1999',name:'Burj Al Arab',ru:'Бурдж аль-Араб',txt:'Отель-парус на собственном острове, в 280 метрах от берега. Ночью фасад меняет цвет.',tech:['Светодинамика фасада','Остров и мост'],lh:1.7},
  {id:'expo',q:-3,r:1,h:.72,top:'land',lbl:'Expo City',code:'EX',yr:'2020',name:'Expo City · Al Wasl',ru:'Экспо-сити и купол Аль-Васль',txt:'Ажурный купол Al Wasl. На его решётку проецируют видео сразу на 360 градусов.',tech:['Проекция на купол','Подсветка решётки'],lh:.95},
  {id:'desert',q:-3,r:2,h:.58,top:'desert',lbl:'Dubai Desert',code:'DS',yr:'30 минут от центра',name:'Dubai Desert',ru:'Пустыня',txt:'Дюны начинаются сразу за городом. Лагеря, сафари и закаты — то, ради чего гости едут за пределы небоскрёбов.',tech:['Песчаный рельеф','Тёплый свет лагеря'],lh:.55},
+ {id:'opera',q:0,r:-1,h:.74,top:'land',lbl:'Dubai Opera',code:'OP',yr:'2016',name:'Dubai Opera · Downtown',ru:'Дубай Опера и Даунтаун',txt:'Театр в форме дау — традиционной арабской лодки. Вокруг отели и башни Даунтауна.',tech:['Свет фасада','Окна башен'],lh:.8},
+ {id:'bbay',q:2,r:-1,h:.82,top:'creek',lbl:'Business Bay',code:'BB',yr:'2008',name:'Business Bay',ru:'Бизнес-Бей',txt:'Деловой район вдоль канала: десятки башен по обоим берегам.',tech:['Свет окон','Канал с водой','Закрученные башни'],lh:1.0},
+ {id:'airport',q:2,r:0,h:.6,top:'land',lbl:'DXB',code:'DXB',yr:'1960',name:'DXB Airport',ru:'Международный аэропорт Дубая',txt:'Один из самых загруженных аэропортов мира по международным пассажирам. Самолёты на макете выруливают и взлетают.',tech:['Кинетика: самолёты','Огни полосы'],lh:.45},
+ {id:'creekh',q:-2,r:2,h:.66,top:'creek',lbl:'Creek Harbour',code:'CH',yr:'2016',name:'Dubai Creek Harbour',ru:'Крик-Харбор',txt:'Новый район на берегу залива с видом на Даунтаун: жилые башни и набережная.',tech:['Набережная с подсветкой','Жилые башни'],lh:.8},
+ {id:'mosque',q:0,r:-2,h:.7,top:'land',lbl:'Jumeirah Mosque',code:'JM',yr:'1979',name:'Jumeirah Mosque',ru:'Мечеть Джумейра',txt:'Мечеть в средневековом каирском стиле, одна из немногих в Дубае, открытых для гостей.',tech:['Тёплая подсветка','Резьба куполов'],lh:.55},
+ {id:'jbr',q:0,r:-3,h:.76,top:'water',lbl:'JBR',code:'JBR',yr:'2007',name:'JBR · The Beach',ru:'Пляж Джумейра-Бич-Резиденс',txt:'Линия жилых башен прямо у пляжа, по соседству с Мариной.',tech:['Пляж и вода','Свет окон'],lh:.9},
+ {id:'atlroyal',q:3,r:-4,h:.62,top:'water',lbl:'Atlantis The Royal',code:'AR',yr:'2023',name:'Atlantis The Royal',ru:'Атлантис Роял',txt:'Отель из сдвинутых друг относительно друга блоков, будто сложенных из кубиков.',tech:['Сложная геометрия','Подсветка фасада'],lh:.6},
+ {id:'gv',q:-4,r:2,h:.58,top:'land',lbl:'Global Village',code:'GV',yr:'1996',name:'Global Village',ru:'Глобал Вилладж',txt:'Парк павильонов десятков стран: рынки, еда и шоу под открытым небом.',tech:['Цветная подсветка','Колесо обозрения'],lh:.45},
 ];
 
 const EN={
@@ -130,6 +138,14 @@ const EN={
  arab:{yr:'1999',ru:'Burj Al Arab',txt:'The sail hotel on its own island, 280 metres offshore. At night the façade changes colour.',tech:['Dynamic façade lighting','Island and bridge']},
  expo:{yr:'2020',ru:'Expo City and Al Wasl Plaza',txt:'The lattice dome of Al Wasl. Video is projected onto its trellis across all 360 degrees.',tech:['Dome projection','Lit trellis']},
  desert:{yr:'30 min from downtown',ru:'The desert',txt:'Dunes begin right outside the city. Camps, safaris and sunsets: what guests travel beyond the skyline for.',tech:['Sand relief','Warm camp light']},
+ opera:{yr:'2016',ru:'Dubai Opera and Downtown',txt:'A theatre shaped like a dhow, the traditional Arabian boat, surrounded by Downtown hotels and towers.',tech:['Façade lighting','Tower windows']},
+ bbay:{yr:'2008',ru:'Business Bay',txt:'A business district along the canal: dozens of towers on both banks.',tech:['Lit windows','Water canal','Twisted towers']},
+ airport:{yr:'1960',ru:'Dubai International Airport',txt:'One of the world’s busiest airports for international passengers. The model planes taxi and take off.',tech:['Kinetics: planes','Runway lights']},
+ creekh:{yr:'2016',ru:'Dubai Creek Harbour',txt:'A new waterfront district facing Downtown: residential towers and a promenade.',tech:['Lit promenade','Residential towers']},
+ mosque:{yr:'1979',ru:'Jumeirah Mosque',txt:'Built in medieval Cairene style, one of the few mosques in Dubai open to visitors.',tech:['Warm lighting','Carved domes']},
+ jbr:{yr:'2007',ru:'Jumeirah Beach Residence',txt:'A line of residential towers right on the beach, next door to the Marina.',tech:['Beach and water','Lit windows']},
+ atlroyal:{yr:'2023',ru:'Atlantis The Royal',txt:'A hotel of offset blocks, stacked as if built from cubes.',tech:['Complex geometry','Façade lighting']},
+ gv:{yr:'1996',ru:'Global Village',txt:'A park of pavilions from dozens of countries: markets, food and open-air shows.',tech:['Coloured lighting','Ferris wheel']},
 };
 const UI={ru:{night:'☾ Ночь',day:'☀ День',tour:'▶ Тур',stop:'■ Стоп',room:'Шоурум',home:'Обзор',studio:'Что показывает студия',screen:'Сенсорный экран',put:'Встроить макет',take:'Вынуть макет',hintM:'Тяни — вращать · колесо — приблизить · клик по соте — история объекта',hintT:'Один палец — вращать · два — приблизить · тап по соте — история'},
  en:{night:'☾ Night',day:'☀ Day',tour:'▶ Tour',stop:'■ Stop',room:'Showroom',home:'Overview',studio:'What the studio shows',screen:'Touchscreen',put:'Drop the model in',take:'Take it out',hintM:'Drag to rotate · scroll to zoom · click a hex for its story',hintT:'One finger to rotate · two to zoom · tap a hex for its story'}};
@@ -146,14 +162,14 @@ renderer.shadowMap.enabled=true; renderer.shadowMap.type=THREE.PCFSoftShadowMap;
 const scene=new THREE.Scene();
 const BG_N=new THREE.Color(0x06070a), BG_D=new THREE.Color(0x24262c);
 scene.background=BG_N.clone();
-scene.fog=new THREE.Fog(0x06070a,26,62);
+scene.fog=new THREE.Fog(0x06070a,45,120);
 const camera=new THREE.PerspectiveCamera(36,innerWidth/innerHeight,.4,160);
 const HOME={pos:new THREE.Vector3(8.2,8.6,11),tgt:new THREE.Vector3(-.9,.6,-1.3)};
 if(innerWidth<760){HOME.pos.set(9.5,12.5,15);HOME.tgt.set(-1,.4,-1.6);}
 camera.position.copy(HOME.pos);
 const controls=new THREE.OrbitControls(camera,canvas);
 controls.target.copy(HOME.tgt); controls.enableDamping=true; controls.dampingFactor=.07;
-controls.maxPolarAngle=1.42; controls.minDistance=2.5; controls.maxDistance=34; controls.screenSpacePanning=true;
+controls.maxPolarAngle=1.42; controls.minDistance=2.5; controls.maxDistance=70; controls.screenSpacePanning=true;
 
 // env map
 const pmrem=new THREE.PMREMGenerator(renderer);
@@ -171,14 +187,14 @@ const ENV_D=pmrem.fromScene(envScene,.03).texture;scene.environment=ENV_N;
 // lights
 const hemi=new THREE.HemisphereLight(0x9fb4d8,0x1a140c,.3); scene.add(hemi);
 const key=new THREE.DirectionalLight(0x9fb0d8,.5);
-key.position.set(-8,16,6); key.castShadow=true;
-key.shadow.mapSize.set(2048,2048); Object.assign(key.shadow.camera,{left:-11,right:11,top:11,bottom:-11,near:1,far:40}); key.shadow.bias=-.0008; key.shadow.normalBias=.02;
+key.position.set(-16,30,12); key.castShadow=true;
+key.shadow.mapSize.set(4096,4096); Object.assign(key.shadow.camera,{left:-24,right:24,top:24,bottom:-24,near:1,far:80}); key.shadow.bias=-.0008; key.shadow.normalBias=.02;
 key.target.position.set(-1,0,-1); scene.add(key,key.target);
 const fill=new THREE.DirectionalLight(0xe8eeff,0);fill.position.set(12,9,10);fill.target.position.set(-1,0,-1);scene.add(fill,fill.target);
 const rimL=new THREE.DirectionalLight(0xfff4e6,0);rimL.position.set(4,10,-16);rimL.target.position.set(-1,0,-1);scene.add(rimL,rimL.target);
 const top_=new THREE.DirectionalLight(0xffffff,0);top_.position.set(-1,20,-1);top_.target.position.set(-1,0,-1);scene.add(top_,top_.target);
 const warm=new THREE.PointLight(0xffb36b,.6,18,2); warm.position.set(3,5,4); scene.add(warm);
-const spot=new THREE.SpotLight(0xfff1d8,0,14,.32,.6,1.2); spot.position.set(0,9,0); scene.add(spot,spot.target);
+const spot=new THREE.SpotLight(0xfff1d8,0,26,.3,.6,1.2); spot.position.set(0,9,0); scene.add(spot,spot.target);
 
 // ───────── TEXTURES ─────────
 function cvs(w,h,fn){const c=document.createElement('canvas');c.width=w;c.height=h;fn(c.getContext('2d'),w,h);const t=new THREE.CanvasTexture(c);t.anisotropy=8;return t;}
@@ -381,13 +397,71 @@ B.desert=g=>{
   anim.push(t=>{fl.intensity=.6+.3*Math.sin(t*9)*Math.sin(t*5.3);});
 };
 
+
+// ───────── НОВЫЕ СОТЫ ─────────
+const Mwin=new THREE.MeshStandardMaterial({color:0xe6dfd3,roughness:.5,emissive:0xffe2b8,emissiveMap:winTex,emissiveIntensity:1});
+const Mcream=new THREE.MeshStandardMaterial({color:0xeadfca,roughness:.6,emissive:0xffc070,emissiveIntensity:.08});
+const Mdark=new THREE.MeshStandardMaterial({color:0x1d1e22,roughness:.8});
+function band(g,w){const m=sh(new THREE.Mesh(new THREE.BoxGeometry(R*S3*.985,.02,w),M.water));m.position.y=.012;g.add(m);}
+function towersIn(g,n,hmin,hmax,avoid,rr=.74){const pts=[];let tr=0;
+  while(pts.length<n&&tr++<900){const x=(rnd()-.5)*1.9,z=(rnd()-.5)*1.9;if(!inHex(x,z,R*rr)||(avoid&&avoid(x,z))||pts.some(p=>Math.hypot(p[0]-x,p[1]-z)<.24))continue;pts.push([x,z]);}
+  pts.forEach(([x,z],i)=>{const h=hmin+rnd()*(hmax-hmin),w=.13+rnd()*.07;g.add(i%5===3?twisted(w,h*1.1,PI/3,M.glassB,x,z):box(w,h,w+rnd()*.05,i%2?M.glass:M.glassB,x,0,z,rnd()*PI));});}
+B.opera=g=>{
+  const sp=new THREE.Shape();sp.moveTo(-.4,0);sp.lineTo(.4,0);sp.lineTo(.32,.2);sp.quadraticCurveTo(0,.24,-.32,.46);sp.closePath();
+  const gg=new THREE.ExtrudeGeometry(sp,{depth:.32,bevelEnabled:false});gg.translate(0,0,-.16);const op=sh(new THREE.Mesh(gg,M.glassB));op.rotation.y=.5;g.add(op);
+  towersIn(g,7,.5,1.15,(x,z)=>Math.hypot(x,z)<.5);
+};
+B.bbay=g=>{band(g,.38);towersIn(g,13,.45,1.3,(x,z)=>Math.abs(z)<.3);};
+B.creekh=g=>{band(g,.46);towersIn(g,9,.4,1.0,(x,z)=>Math.abs(z)<.34);
+  const pl=new THREE.Mesh(new THREE.BoxGeometry(R*S3*.95,.012,.02),M.warmLed);pl.position.set(0,.03,.25);g.add(pl);};
+B.airport=g=>{
+  g.add(box(1.25,.09,.24,M.white,0,0,-.42));
+  const roof=sh(new THREE.Mesh(new THREE.CylinderGeometry(.12,.12,1.25,16,1,false,0,PI),Mwin));roof.rotation.set(0,0,PI/2);roof.rotation.x=PI/2;roof.position.set(0,.09,-.42);roof.scale.set(1,1,.6);g.add(roof);
+  g.add(box(1.7,.006,.18,Mdark,0,0,.22));
+  for(let i=0;i<12;i++){const d=new THREE.Mesh(new THREE.BoxGeometry(.06,.004,.012),M.led);d.position.set(-.77+i*.14,.009,.22);g.add(d);}
+  g.add(cyl(.025,.03,.5,M.white,.62,0,-.05,10));g.add(cyl(.07,.06,.07,M.glassB,.62,.5,-.05,12));
+  const mk=()=>{const pl=new THREE.Group();const f=new THREE.Mesh(new THREE.CylinderGeometry(.017,.014,.24,10),M.white);f.rotation.z=PI/2;pl.add(f);
+    const w=new THREE.Mesh(new THREE.BoxGeometry(.06,.005,.24),M.white);pl.add(w);const t=new THREE.Mesh(new THREE.BoxGeometry(.04,.06,.006),M.white);t.position.set(-.1,.03,0);pl.add(t);pl.traverse(m=>m.castShadow=true);return pl;};
+  [[-.35,-.18],[.15,-.18]].forEach(([x,z])=>{const p=mk();p.position.set(x,.03,z);p.rotation.y=PI/2;g.add(p);});
+  const fly=mk();g.add(fly);
+  anim.push(t=>{const u=(t*.06)%1;const x=-.8+u*1.9;fly.position.set(x,.035+Math.max(0,u-.55)*1.4,.22);fly.rotation.z=u>.55?.18:0;fly.visible=u<.95;});
+};
+B.mosque=g=>{
+  g.add(box(.62,.13,.48,Mcream,0,0,0));
+  const dome=sh(new THREE.Mesh(new THREE.SphereGeometry(.16,24,12,0,2*PI,0,PI/2),Mcream));dome.position.y=.13;g.add(dome);
+  [[-.2,-.14],[.2,-.14],[-.2,.14],[.2,.14]].forEach(([x,z])=>{const d=sh(new THREE.Mesh(new THREE.SphereGeometry(.06,16,8,0,2*PI,0,PI/2),Mcream));d.position.set(x,.13,z);g.add(d);});
+  [-.36,.36].forEach(x=>{g.add(cyl(.025,.032,.55,Mcream,x,0,-.26,10));const tp=new THREE.Mesh(new THREE.ConeGeometry(.03,.07,10),Mcream);tp.position.set(x,.585,-.26);g.add(tp);});
+};
+B.jbr=g=>{
+  g.add(hexBand(.05,M.sand));
+  for(let i=0;i<8;i++){const x=-.78+i*.22,z=.38+(i%2)*.14;if(!inHex(x,z,R*.82))continue;g.add(box(.16,.55+rnd()*.55,.15,i%2?M.glass:Mwin,x,.035,z));}
+};
+B.atlroyal=g=>{
+  g.add(hexBand(.3,M.sand));
+  const bg=new THREE.Group();bg.position.set(0,.035,.55);g.add(bg);
+  for(let k=0;k<6;k++){const off=(k%2?.1:-.1)+(k%3===2?.06:0);bg.add(box(.46,.09,.15,Mwin,off,k*.09,0,(k%2?.08:-.08)));}
+  bg.add(box(.18,.06,.16,M.glassB,0,.54,0));
+};
+B.gv=g=>{
+  g.add(cyl(.3,.3,.015,M.white,0,0,0,32));
+  const cols=[0xd9534f,0xf0ad4e,0x5cb85c,0x5bc0de,0x9b59b6,0xe67e22,0x1abc9c,0xe84393,0xfdcb6e,0x74b9ff,0xa29bfe,0x55efc4];
+  cols.forEach((c,i)=>{const a=i/cols.length*2*PI;const m=new THREE.MeshStandardMaterial({color:c,roughness:.6,emissive:c,emissiveIntensity:.25});
+    g.add(box(.13,.1+rnd()*.08,.11,m,Math.cos(a)*.55,0,Math.sin(a)*.55,-a));});
+  const wh=new THREE.Group();wh.position.set(.0,.22,0);g.add(wh);
+  wh.add(new THREE.Mesh(new THREE.TorusGeometry(.17,.008,6,40),M.led));
+  for(let i=0;i<12;i++){const a=i/12*2*PI;wh.add(rod(new THREE.Vector3(),new THREE.Vector3(Math.cos(a)*.17,Math.sin(a)*.17,0),.003,M.white));}
+  g.add(rod(new THREE.Vector3(-.1,0,0),new THREE.Vector3(0,.22,0),.008,M.white));g.add(rod(new THREE.Vector3(.1,0,0),new THREE.Vector3(0,.22,0),.008,M.white));
+  anim.push((t,dt)=>{wh.rotation.z-=dt*.25;});
+};
+
 // ───────── TILES ─────────
 const tiles={}, pickables=[];
+const SC=1.6;const stand=new THREE.Group();stand.scale.setScalar(SC);scene.add(stand);
 const rimGeo=new THREE.TorusGeometry(R*.995,.022,4,6); rimGeo.rotateX(-PI/2); rimGeo.rotateY(PI/6);
 const dotGeo=new THREE.SphereGeometry(.028,8,6), treeGeo=new THREE.SphereGeometry(1,7,5);
 TILES.forEach(T=>{
   seed=T.id.split('').reduce((a,c)=>a*31+c.charCodeAt(0),7)%2147483647||7;
-  const g=new THREE.Group();g.position.copy(axial(T.q,T.r));scene.add(g);
+  const g=new THREE.Group();g.position.copy(axial(T.q,T.r));stand.add(g);
   const topMat=(T.top==='water')?Object.assign(M.water.clone(),{map:topTex('water')}):new THREE.MeshStandardMaterial({map:topTex(T.top),roughness:.92,metalness:0});
   const body=sh(new THREE.Mesh(new THREE.CylinderGeometry(R,R,T.h,6),[M.side,topMat,M.side]));body.position.y=T.h/2;g.add(body);
   const plinth=new THREE.Mesh(new THREE.CylinderGeometry(R*1.012,R*1.012,.05,6),new THREE.MeshStandardMaterial({color:0x111216,roughness:.5,flatShading:true}));plinth.position.y=.025;g.add(plinth);
@@ -405,16 +479,22 @@ TILES.forEach(T=>{
     im.count=k;top.add(im);}
   g.traverse(o=>{o.userData.tile=T.id;});
   pickables.push(g);
-  tiles[T.id]={T,g,rim,lift:0,base:g.position.clone()};
+  tiles[T.id]={T,g,rim,lift:0,base:g.position.clone().multiplyScalar(SC)};
 });
 
 
+{const bs=Object.values(tiles).map(o=>o.base);const c=new THREE.Vector3();bs.forEach(b=>c.add(b));c.divideScalar(bs.length);
+ let r=0;bs.forEach(b=>r=Math.max(r,b.distanceTo(c)));r+=R*SC;
+ HOME.tgt.set(c.x,.5*SC,c.z);HOME.pos.copy(HOME.tgt).add(new THREE.Vector3(.53,.48,.7).normalize().multiplyScalar(r*(innerWidth<760?3.1:2.15)));
+ camera.position.copy(HOME.pos);controls.target.copy(HOME.tgt);key.target.position.set(c.x,0,c.z);}
+
 // ───────── СЕНСОРНЫЕ ЭКРАНЫ (только у части сот) ─────────
 const SCREENS=[
- {id:'burj',type:'face',a:PI/3,title:'Burj Khalifa',tabs:['История','Фонтан','Свет 828 м']},
- {id:'palm',type:'kiosk',a:PI/3,title:'Palm Jumeirah',tabs:['Остров','Монорельс','Отели']},
- {id:'museum',type:'kiosk',a:0,title:'Museum of the Future',tabs:['Фасад','Залы','Каллиграфия']},
  {id:'slot',type:'face',a:PI/3,title:'Ваш проект',tabs:['Планировки','Цены','Виды']},
+ {id:'airport',type:'face',a:PI/3,title:'DXB Airport',tabs:['Рейсы','Терминалы','История']},
+ {id:'creekh',type:'face',a:PI/3,title:'Creek Harbour',tabs:['Квартиры','Набережная','Виды']},
+ {id:'palm',type:'kiosk',a:PI/3,title:'Palm Jumeirah',tabs:['Остров','Отели','Пляжи']},
+ {id:'frame',type:'kiosk',a:2*PI/3,title:'Dubai Frame',tabs:['История','Мост','Виды']},
 ];
 const screens=[];
 function drawScreen(g,w,h,S,act){
@@ -439,12 +519,12 @@ SCREENS.forEach(S=>{
     holder=new THREE.Group();const bez=new THREE.Mesh(new THREE.BoxGeometry(.8,.47,.02),scrMat);holder.add(bez);disp.scale.setScalar(.76);disp.position.z=.011;holder.add(disp);
     holder.position.set(Math.cos(S.a)*(ap+.01),Math.min(T.h*.52,T.h-.3),Math.sin(S.a)*(ap+.01));holder.rotation.y=PI/2-S.a;o.g.add(holder);
   }else{
-    holder=new THREE.Group();const d=ap+.55;holder.position.set(o.base.x+Math.cos(S.a)*d,0,o.base.z+Math.sin(S.a)*d);holder.rotation.y=PI/2-S.a;
+    holder=new THREE.Group();const d=ap+.55;holder.position.set(o.g.position.x+Math.cos(S.a)*d,0,o.g.position.z+Math.sin(S.a)*d);holder.rotation.y=PI/2-S.a;
     holder.add(sh(new THREE.Mesh(new THREE.CylinderGeometry(.16,.18,.03,24),scrMat)));
     const pole=sh(new THREE.Mesh(new THREE.BoxGeometry(.07,.78,.05),scrMat));pole.position.y=.4;holder.add(pole);
     const head=new THREE.Group();head.position.set(0,.85,.02);head.rotation.x=-.55;holder.add(head);
     head.add(sh(new THREE.Mesh(new THREE.BoxGeometry(.62,.38,.03),scrMat)));disp.scale.setScalar(.58);disp.position.z=.016;head.add(disp);
-    holder.traverse(m=>m.userData.tile=S.id);scene.add(holder);pickables.push(holder);
+    holder.traverse(m=>m.userData.tile=S.id);stand.add(holder);pickables.push(holder);
   }
   T.screen=true;
   screens.push({S,g,tex,act:0});
@@ -453,18 +533,18 @@ let scrT=0;anim.push((t,dt)=>{scrT+=dt;if(scrT>1.8){scrT=0;screens.forEach(o=>{o
 
 // ───────── ROOM ─────────
 const room=new THREE.Group();scene.add(room);
-const mirror=new THREE.Reflector(new THREE.PlaneGeometry(90,90),{textureWidth:innerWidth*DPR*.8,textureHeight:innerHeight*DPR*.8,color:0x595959,clipBias:.01});
+const mirror=new THREE.Reflector(new THREE.PlaneGeometry(170,170),{textureWidth:innerWidth*DPR*.8,textureHeight:innerHeight*DPR*.8,color:0x595959,clipBias:.01});
 mirror.rotation.x=-PI/2;mirror.position.y=-.03;scene.add(mirror);
 const concrete=cvs(1024,1024,(g,w,h)=>{g.fillStyle='#8a8784';g.fillRect(0,0,w,h);
   for(let o=0;o<4;o++){const n=[220,700,2400,9000][o],r=[160,70,22,5][o],a=[.05,.05,.045,.05][o];
     for(let i=0;i<n;i++){const x=rnd()*w,y=rnd()*h,rr=r*(.4+rnd());const gr=g.createRadialGradient(x,y,0,x,y,rr);const c=rnd()<.5?'0,0,0':'255,255,255';gr.addColorStop(0,`rgba(${c},${a})`);gr.addColorStop(1,`rgba(${c},0)`);g.fillStyle=gr;g.fillRect(x-rr,y-rr,rr*2,rr*2);}}
   for(let i=0;i<500;i++){g.fillStyle=`rgba(${rnd()<.5?40:200},${rnd()<.5?40:200},${rnd()<.5?40:200},.18)`;const s=1+rnd()*2.5;g.fillRect(rnd()*w,rnd()*h,s,s);}
   g.strokeStyle='rgba(0,0,0,.22)';g.lineWidth=3;g.strokeRect(1.5,1.5,w-3,h-3);});
-concrete.wrapS=concrete.wrapT=THREE.RepeatWrapping;concrete.repeat.set(15,15);
-const floor=new THREE.Mesh(new THREE.PlaneGeometry(90,90),new THREE.MeshStandardMaterial({map:concrete,roughnessMap:concrete,color:0x3a3936,roughness:.55,metalness:0,transparent:true,opacity:.9,envMapIntensity:.6}));
+concrete.wrapS=concrete.wrapT=THREE.RepeatWrapping;concrete.repeat.set(28,28);
+const floor=new THREE.Mesh(new THREE.PlaneGeometry(170,170),new THREE.MeshStandardMaterial({map:concrete,roughnessMap:concrete,color:0x3a3936,roughness:.55,metalness:0,transparent:true,opacity:.9,envMapIntensity:.6}));
 floor.rotation.x=-PI/2;floor.receiveShadow=true;scene.add(floor);
 const glow={material:{opacity:0}};
-const walls=new THREE.Mesh(new THREE.BoxGeometry(64,15,64),new THREE.MeshStandardMaterial({color:0x08090b,roughness:.9,side:THREE.BackSide}));walls.position.y=7.5;room.add(walls);
+const walls=new THREE.Mesh(new THREE.BoxGeometry(100,20,100),new THREE.MeshStandardMaterial({color:0x08090b,roughness:.9,side:THREE.BackSide}));walls.position.y=10;room.add(walls);
 const strips=[];for(let i=-3;i<=3;i++){const s=new THREE.Mesh(new THREE.BoxGeometry(46,.06,.22),new THREE.MeshBasicMaterial({color:0xffffff}));s.position.set(0,14.9,i*7);room.add(s);strips.push(s);}
 // крупный логотип студии на стенах
 new THREE.ImageLoader().load('logo911.png',img=>{
@@ -475,31 +555,21 @@ new THREE.ImageLoader().load('logo911.png',img=>{
   const asp=img.width/img.height;
   const mk=(w,x,y,z,ry)=>{const m=new THREE.Mesh(new THREE.PlaneGeometry(w,w/asp),new THREE.MeshBasicMaterial({map:tx,transparent:true,fog:false,color:new THREE.Color(1,1,1).multiplyScalar(1.25)}));m.position.set(x,y,z);m.rotation.y=ry;room.add(m);
     const bk=new THREE.Mesh(new THREE.PlaneGeometry(w*1.12,w/asp*2.2),new THREE.MeshStandardMaterial({color:0x0c0c0e,roughness:.4,metalness:.6}));bk.position.set(x,y,z);bk.rotation.y=ry;bk.translateZ(-.05);room.add(bk);};
-  mk(30,-6,8,-31.8,0);mk(30,-31.8,8,-4,PI/2);
+  mk(44,-6,10.5,-49.8,0);mk(44,-49.8,10.5,-4,PI/2);
 });
 // стены как на рендерах: чёрные панели и вертикальные световые полосы
 const ledV=new THREE.MeshBasicMaterial({color:new THREE.Color(1,.97,.92).multiplyScalar(1.5),fog:false});
-for(let k=-5;k<=5;k++){
-  if(Math.abs(k*5.5+6)>7.5){const a=new THREE.Mesh(new THREE.BoxGeometry(.08,9,.04),ledV);a.position.set(k*5.5,5.5,-31.9);room.add(a);}
-  if(Math.abs(k*5.5+4)>7.5){const b=new THREE.Mesh(new THREE.BoxGeometry(.04,9,.08),ledV);b.position.set(-31.9,5.5,k*5.5);room.add(b);}
-  const c=new THREE.Mesh(new THREE.BoxGeometry(.08,9,.04),ledV);c.position.set(k*5.5,5.5,31.9);room.add(c);
-  const d=new THREE.Mesh(new THREE.BoxGeometry(.04,9,.08),ledV);d.position.set(31.9,5.5,k*5.5);room.add(d);}
+for(let k=-8;k<=8;k++){const u=k*6;
+  [[u,-49.9,0],[-49.9,u,1],[u,49.9,0],[49.9,u,1]].forEach(([x,z,side])=>{const m=new THREE.Mesh(new THREE.BoxGeometry(side?.05:.1,12,side?.1:.05),ledV);m.position.set(x,7,z);room.add(m);});}
 // потолок: фермы со споты вместо светящихся линий
 const trussM=new THREE.MeshStandardMaterial({color:0x1a1b1f,roughness:.6,metalness:.5});
-for(let k=-2;k<=2;k++){const t=new THREE.Mesh(new THREE.BoxGeometry(40,.25,.25),trussM);t.position.set(-1,11,k*5-1);room.add(t);
-  for(let q=-3;q<=3;q++){const sp=new THREE.Mesh(new THREE.CylinderGeometry(.09,.12,.3,10),trussM);sp.position.set(q*4-1,10.75,k*5-1);room.add(sp);
-    const g=new THREE.Mesh(new THREE.CircleGeometry(.08,12),ledV);g.rotation.x=PI/2;g.position.set(q*4-1,10.59,k*5-1);room.add(g);}}
-// stanchions around model
-const ropeMat=new THREE.MeshStandardMaterial({color:0x0c0c0e,roughness:.8});
-const postM=new THREE.MeshStandardMaterial({color:0x0e0f12,roughness:.35,metalness:.6});
-const ring=[];for(let i=0;i<14;i++){const a=i/14*2*PI;ring.push(new THREE.Vector3(-1+Math.cos(a)*10.2,0,-1.2+Math.sin(a)*9.4));}
-ring.forEach((p,i)=>{const post=cyl(.04,.04,.95,postM,p.x,0,p.z,10);room.add(post);room.add(cyl(.17,.19,.03,postM,p.x,0,p.z,20));const n=ring[(i+1)%ring.length];
-  const curve=new THREE.QuadraticBezierCurve3(p.clone().setY(.85),p.clone().add(n).multiplyScalar(.5).setY(.62),n.clone().setY(.85));room.add(new THREE.Mesh(new THREE.TubeGeometry(curve,12,.018,6),ropeMat));});
-
+for(let k=-4;k<=4;k++){const t=new THREE.Mesh(new THREE.BoxGeometry(80,.35,.35),trussM);t.position.set(-1,16,k*8-1);room.add(t);
+  for(let q=-6;q<=6;q++){const sp=new THREE.Mesh(new THREE.CylinderGeometry(.12,.16,.4,10),trussM);sp.position.set(q*6-1,15.65,k*8-1);room.add(sp);
+    const g=new THREE.Mesh(new THREE.CircleGeometry(.11,12),ledV);g.rotation.x=PI/2;g.position.set(q*6-1,15.44,k*8-1);room.add(g);}}
 // ───────── PANORAMA (generated 360) ─────────
 let pano=null, panoOn=false;
 new THREE.TextureLoader().load('env/showroom-360.jpg',tx=>{tx.mapping=THREE.EquirectangularReflectionMapping;pano=tx;const b=$('#bPano');b.style.display='';},undefined,()=>{});
-function setPano(on){panoOn=on&&!!pano;room.visible=!panoOn;scene.background=panoOn?pano:scene.background.isColor?scene.background:BG_N.clone();if(!panoOn&&!scene.background.isColor)scene.background=BG_N.clone();scene.fog.far=panoOn?400:62;$('#bPano').classList.toggle('on',panoOn);$('#bRoom').classList.toggle('on',!panoOn);}
+function setPano(on){panoOn=on&&!!pano;room.visible=!panoOn;scene.background=panoOn?pano:scene.background.isColor?scene.background:BG_N.clone();if(!panoOn&&!scene.background.isColor)scene.background=BG_N.clone();scene.fog.far=panoOn?400:120;$('#bPano').classList.toggle('on',panoOn);$('#bRoom').classList.toggle('on',!panoOn);}
 $('#bPano').onclick=()=>setPano(true);$('#bRoom').onclick=()=>setPano(false);
 
 // ───────── POST ─────────
@@ -518,6 +588,7 @@ function applyK(k){
   warm.intensity=lerp(.7,.15,k);
   // стекло днём: меньше зеркала, больше собственного цвета
   [M.glass,M.glassB].forEach((m,i)=>{m.metalness=lerp(.75,.45,k);m.roughness=lerp(.22,.16,k);m.envMapIntensity=lerp(1,1,k);m.emissiveIntensity=lerp(1,.22,k);});
+  Mwin.emissiveIntensity=lerp(1,.2,k);Mcream.emissiveIntensity=lerp(.25,.02,k);
   M.glass.color.setRGB(lerp(.36,.55,k),lerp(.4,.62,k),lerp(.45,.72,k));
   M.glassB.color.setRGB(lerp(.24,.38,k),lerp(.33,.55,k),lerp(.41,.7,k));
   scene.environment=k>.5?ENV_D:ENV_N;M.gold.envMapIntensity=lerp(1,1.2,k);M.steel.envMapIntensity=lerp(1,1.15,k);M.steel.metalness=lerp(.95,.85,k);
@@ -544,14 +615,14 @@ function select(id){
   if(sel)tiles[sel].rim.material=M.rim;
   sel=id;const t=tiles[id],T=t.T;t.rim.material=M.rimSel;
   Object.values(tiles).forEach(o=>{o.pk.classList.toggle('on',o.T.id===id);o.lb.classList.toggle('dim',o.T.id!==id);});
-  const c=t.base.clone().setY(T.h+T.lh*.3);
+  const c=t.base.clone().setY((T.h+T.lh*.3)*SC);
   let dir=camera.position.clone().sub(controls.target).setY(0).normalize();if(dir.lengthSq()<.1)dir.set(.6,0,.8);
-  const dist=innerWidth<760?7.5:6.2+T.lh*.9;
+  const dist=(innerWidth<760?7.5:6.2+T.lh*.9)*SC;
   const pos=c.clone().addScaledVector(dir,dist).setY(c.y+dist*.62);
-  if(innerWidth<760){c.y-=1.5;pos.y-=1.5;}
-  if(innerWidth>=760){const right=new THREE.Vector3().crossVectors(dir,new THREE.Vector3(0,1,0)).normalize();c.addScaledVector(right,-1.1);pos.addScaledVector(right,-1.1);}
+  if(innerWidth<760){c.y-=1.5*SC;pos.y-=1.5*SC;}
+  if(innerWidth>=760){const right=new THREE.Vector3().crossVectors(dir,new THREE.Vector3(0,1,0)).normalize();c.addScaledVector(right,-1.1*SC);pos.addScaledVector(right,-1.1*SC);}
   flyTo(pos,c);
-  spot.position.copy(t.base).add(new THREE.Vector3(.4,8,.4));spot.target.position.copy(t.base);
+  spot.position.copy(t.base).add(new THREE.Vector3(.6,13,.6));spot.target.position.copy(t.base);
   fillPanel(T);$('#panel').classList.add('open');document.body.classList.add('sel');
   $('#pAct').hidden=id!=='slot';if(id==='slot'){SLOT.kt=0;setTimeout(()=>{if(sel==='slot'){SLOT.kt=1;slotBtn();}},1300);slotBtn();}
 }
