@@ -49,6 +49,7 @@ header span{display:block;margin-top:7px;font-size:12.5px;color:var(--mute)}
 .hint{position:fixed;left:24px;bottom:24px;z-index:4;font-size:12px;color:var(--mute);max-width:260px;line-height:1.45;transition:opacity .8s}
 .hint.off{opacity:0}
 body.embed header,body.embed #bLang{display:none}
+body.embed .ctl{right:72px}
 body.embed .ctl{top:14px}
 #load{position:fixed;inset:0;z-index:20;display:grid;place-items:center;background:var(--bg);font:500 12px 'Unbounded';letter-spacing:.12em;color:var(--mute);transition:opacity .6s}
 #load.hide{opacity:0;pointer-events:none}
@@ -637,10 +638,10 @@ function applyK(k){
   M.glass.color.setRGB(lerp(.36,.55,k),lerp(.4,.62,k),lerp(.45,.72,k));
   M.glassB.color.setRGB(lerp(.24,.38,k),lerp(.33,.55,k),lerp(.41,.7,k));
   scene.environment=k>.5?ENV_D:ENV_N;M.gold.envMapIntensity=lerp(1,.85,k);M.gold.roughness=lerp(.26,.38,k);M.steel.envMapIntensity=lerp(1,.8,k);M.steel.roughness=lerp(.2,.32,k);M.steel.metalness=lerp(.95,.85,k);
-  M.steel.emissiveIntensity=lerp(.9,.1,k);M.arab.emissiveIntensity=lerp(.3,.04,k);M.arab.color.setScalar(lerp(.95,.66,k));M.white.color.setScalar(lerp(.85,.7,k));M.sand.color.setRGB(lerp(.72,.6,k),lerp(.64,.52,k),lerp(.48,.38,k));
+  M.steel.emissiveIntensity=lerp(.9,.1,k);M.arab.emissiveIntensity=lerp(.3,.04,k);M.arab.color.setScalar(lerp(.95,.66,k));M.white.color.setScalar(lerp(.6,.7,k));M.sand.color.setRGB(lerp(.5,.6,k),lerp(.44,.52,k),lerp(.33,.38,k));Mcream.color.setRGB(lerp(.62,.85,k),lerp(.58,.8,k),lerp(.5,.72,k));Mwin.color.setRGB(lerp(.5,.85,k),lerp(.48,.82,k),lerp(.45,.78,k));
   M.side.color.setRGB(lerp(.165,.23,k),lerp(.172,.235,k),lerp(.19,.25,k));
   M.rim.color.setScalar(lerp(1.15,.5,k));
-  bloom.strength=lerp(.95,.05,k);bloom.threshold=lerp(.7,.97,k);
+  bloom.strength=lerp(.8,.05,k);bloom.threshold=lerp(.82,.97,k);
   if(scene.background.isColor)scene.background.lerpColors(BG_N,BG_D,k);
   scene.fog.color.lerpColors(BG_N,BG_D,k);
   walls.material.color.setRGB(lerp(.03,.09,k),lerp(.034,.09,k),lerp(.04,.1,k));
@@ -703,7 +704,7 @@ function frame(){
   anim.forEach(f=>f(t,dt));
   M.dot.color.setRGB(.31,.89,.94).multiplyScalar(lerp(1.5,.8,K)*(.75+.25*Math.sin(t*2.4)));
   Object.values(tiles).forEach(o=>{const target=0;o.lift=lerp(o.lift,target,.08);o.g.position.y=o.lift;});
-  spot.intensity=lerp(spot.intensity,sel?lerp(.9,.18,K):0,.08);
+  spot.intensity=lerp(spot.intensity,sel?lerp(.32,.12,K):0,.08);
   if(cam.k<1){cam.k=Math.min(1,cam.k+dt/1.6);const e=cam.k<.5?4*cam.k**3:1-Math.pow(-2*cam.k+2,3)/2;camera.position.lerpVectors(cam.from,cam.to,e);controls.target.lerpVectors(cam.tf,cam.tt,e);}
   else if(!sel&&!down&&!tourTimer&&!window.__still){controls.autoRotate=true;controls.autoRotateSpeed=.25;}
   if(sel||down||tourTimer)controls.autoRotate=false;
